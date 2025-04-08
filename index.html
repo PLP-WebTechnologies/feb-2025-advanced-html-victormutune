@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Practice Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    form {
+      margin-top: 30px;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered list with Roman numerals -->
+  <h2>Roman Numeral List</h2>
+  <ol type="I">
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Fifth Item</li>
+  </ol>
+
+  <!-- External image from Pexels -->
+  <h2>External Image</h2>
+  <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" 
+       alt="Pexels example image" 
+       width="400"/>
+
+  <!-- Table of 5 contacts -->
+  <h2>Contacts Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>123 Main St</td>
+      <td>+1234567890</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>456 Oak Ave</td>
+      <td>+0987654321</td>
+      <td>jane@example.com</td>
+    </tr>
+    <tr>
+      <td>Sam Brown</td>
+      <td>789 Pine Rd</td>
+      <td>+1122334455</td>
+      <td>sam@example.com</td>
+    </tr>
+    <tr>
+      <td>Lisa White</td>
+      <td>321 Birch Ln</td>
+      <td>+6677889900</td>
+      <td>lisa@example.com</td>
+    </tr>
+    <tr>
+      <td>Mike Black</td>
+      <td>654 Cedar St</td>
+      <td>+4455667788</td>
+      <td>mike@example.com</td>
+    </tr>
+  </table>
+
+  <!-- Registration form -->
+  <h2>Registration Form</h2>
+  <form action="#" method="POST">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">--Select your country--</option>
+      <option value="kenya">Kenya</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="india">India</option>
+    </select>
+
+    <!-- Radio buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required />
+    <label for="female">Female</label>
+
+    <!-- Checkboxes -->
+    <label>Skills:</label>
+    <input type="checkbox" id="html" name="skills" value="HTML" />
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skills" value="CSS" />
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js" name="skills" value="JavaScript" />
+    <label for="js">JavaScript</label>
+
+    <!-- Submit -->
+    <br><br>
+    <input type="submit" value="Register" />
+  </form>
+
+</body>
+</html>
 
